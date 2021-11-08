@@ -7,4 +7,4 @@ if (reverseNum(number) === number){
     console.log("True")
 }else{
     console.log("False")
-}
+};
