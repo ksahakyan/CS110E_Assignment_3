@@ -1,4 +1,4 @@
-function isPrime(x) {
+function Prime(x) {
     let sqrtNum = Math.floor(Math.sqrt(x)); //x under square root and takes the integer part
     if ( x <= 1) {
         return false
@@ -10,4 +10,4 @@ function isPrime(x) {
     }
     return true
 }
-console.log(isPrime(6));
+console.log(Prime(6));

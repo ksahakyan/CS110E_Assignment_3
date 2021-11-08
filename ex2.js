@@ -1,4 +1,4 @@
-function isPrime(x) {
+function Prime(x) {
         let sqrtNum = Math.floor(Math.sqrt(x));
    
         if ( x <= 1) {
@@ -12,13 +12,13 @@ function isPrime(x) {
         }
         return true
     }
-    function primeBetween(x, y) {
-    let res = [];
+    function primesBtw(x, y) {
+    let result = [];
     for ( let i = x; i <= y; i++) {
-        if( isPrime(i)) {
-            res.push(i);
+        if( Prime(i)) {
+            result.push(i);
         }
     }
-    return res;
+    return result;
 }
-console.log(primeBetween(3, 9))
+console.log(primesBtw(3, 9))

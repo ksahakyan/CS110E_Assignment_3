@@ -1,4 +1,4 @@
-function reverseBin(a){
+function reverse(a){
     let result = [];
     for(let i = 0; i < a.length; i++){
        
@@ -11,4 +11,4 @@ function reverseBin(a){
     }
     return result;
 }
-console.log(reserveBin([1,0,1,0,1]))
+console.log(reverse([1,0,1,0,1]));

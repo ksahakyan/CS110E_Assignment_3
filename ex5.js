@@ -1,4 +1,4 @@
-function binAdd(a,b){
+function add(a,b){
        
     let dif = Math.abs(a.length - b.length);
     if(a.length > b.length){
@@ -39,4 +39,4 @@ function binAdd(a,b){
     return result;
 
 }
-console.log([],[])
+console.log(add([1,1,0,1],[0,0,1,1]));

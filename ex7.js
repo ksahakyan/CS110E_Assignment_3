@@ -1,16 +1,16 @@
-function binAdd(a,b){
+function Add(a,b){
         
-    let dif = Math.abs(a.length - b.length);
+    let diff = Math.abs(a.length - b.length);
     if(a.length > b.length){
 
-        for(let i = 0;i < dif; i++){
+        for(let i = 0;i < diff; i++){
             b.unshift(0);
         }
 
     }
     else{
 
-        for(let i = 0;i < dif; i++){
+        for(let i = 0;i < diff; i++){
             a.unshift(0);
         }
 
@@ -40,7 +40,7 @@ function binAdd(a,b){
 
 }
 
-function reverseBin(a){
+function reverse(a){
     let result = [];
     for(let i = 0; i < a.length; i++){
         
@@ -53,12 +53,12 @@ function reverseBin(a){
     return result;
 }
 
-function positiveToNegativeBin(a){
-    let result = reverseBin(a);
-    result = binAdd(result,[1]);
+function positiveToNegative(a){
+    let result = reverse(a);
+    result = Add(result,[1]);
     return result;
 }
 
-let num = [0,1,1,0,1];
-result = positiveToNegativeBin(num);
+let number = [0,1,1,0,1];
+result = positiveToNegative(number);
 console.log(result);

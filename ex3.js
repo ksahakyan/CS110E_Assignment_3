@@ -1,5 +1,5 @@
-function reverseNum(num) {
-    return parseFloat((((num.toString()).split('')).reverse()).join('')) * Math.sign(num)
+function reverseNum(number) {
+    return parseFloat((((number.toString()).split('')).reverse()).join('')) * Math.sign(number)
 }
-num = 3200
-console.log(reverseNum(num))
+number = 3200
+console.log(reverseNum(number))
